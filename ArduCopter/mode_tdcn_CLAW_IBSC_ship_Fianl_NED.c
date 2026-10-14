@@ -304,7 +304,7 @@ void CLAW_step(void)
     // ======================================================================
 #define ACCEL_LIMIT_LINEAR  20.0
 #define ACCEL_LIMIT_ANGULAR 10.0
-    double ACCEL_LPF_ALPHA = 0.5;
+    double ACCEL_LPF_ALPHA = 0.2;
 
     /* Sejong: 첫 스텝은 이전 속도가 없으므로 가속도를 0 으로 둔다.
        (STV_OLD 를 현재 속도로 채우면 raw_acc_linear 가 0 이 된다) */
